@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    background-image: url('../PIC/background.jpg');
+}
+
+html body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.navbar-container {
+    overflow: hidden;
+    display: block;
+    height: 100%;
+}
+
+.navbar-container div {
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.navbar #img {
+    float: left;
+}
+
+.navbar ul {
+    width: 100%;
+    margin-right: 30px;
+}
+
+ul.lists li.Active {
+    background-color: rgba(0, 200, 17, 0.6);
+}
+
+li.Active {
+    color: white;
+    background-color: rgba(100, 122, 255, 0.8);
+    border-radius: 50%;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+li.Active {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul.lists li.link {
+    float: right;
+    border: 1px solid blue;
+}
+
+ul.lists li.link:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.image img {
+    float: left;
+    border-radius: 50%;
+}
+
+.picture {
+    align-items: center;
+    border-radius: 30px 0 30px 0;
+    border: 4px double #EAEAEE;
+    border-left: green;
+    position: relative;
+    width: 500px;
+    height: 700px;
+    margin-left: 15px;
+}
+
+.objectives {
+    align-items: center;
+    border-radius: 30px 0 30px 0;
+    border: 4px double #EAEAEE;
+    border-right: green;
+    background-color: rgba(192, 192, 190, 0.5);
+    width: 700px;
+    padding-right: 10px;
+    height: 400px;
+}
+
+.objectives .objects {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.picture #image {
+    border-radius: 30px 0 30px 0;
+    position: absolute;
+    top: 2%;
+    bottom: 2%;
+    width: 90%;
+    height: 94%;
+}
+
+.flex-container div.catch {
+    height: auto;
+    width: 110px;
+    background-color: rgba(100, 100, 100, 0.6);
+    margin-left: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.flex-container div.catch a {
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+.navbar ul input,
+label {
+    font-size: 30px;
+    color: black;
+    background-color: blue;
+    width: 30px;
+    float: right;
+    display: none;
+}
+
+.manu a:hover {
+    background-color: aqua;
+}
+
+@media only screen and (max-width:778px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .flex-container {
+        height: 100%;
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 2px;
+    }
+    .objectives {
+        height: 400px;
+        position: absolute;
+        top: 2%;
+        bottom: 70%;
+    }
+    .flex-container div.catch {
+        transform: rotate(-90deg);
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px 0 0 40px;
+        border: 4px double white;
+        position: relative;
+        top: 700px;
+        bottom: 0;
+        background-color: rgba(100, 17, 200, 0.8);
+    }
+    div.catch a {
+        transform: rotate(90deg);
+        padding-top: 10px;
+        padding-left: 2px;
+        align-items: center;
+        width: 60%;
+    }
+    .catch {
+        height: 80%;
+    }
+    .lists a {
+        display: block;
+        margin: 10px;
+        color: black;
+        text-align: center;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        background-color: rgba(100, 17, 200, 0.8);
+        border: 1px solid blue;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        width: 26px;
+    }
+    #toggle {
+        display: none;
+    }
+    #toggle:checked+.menu {
+        margin-left: 20px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    ul div.menu {
+        margin-left: 20px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lists div.menu {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+        display: none;
+    }
+    .picture {
+        display: none;
+    }
+    .objectives {
+        margin-top: 30px;
+        align-items: center;
+        border-radius: 30px 0 30px 0;
+        border: 4px double #EAEAEE;
+        border-right: green;
+        background-color: rgba(192, 192, 190, 0.5);
+        width: 80%;
+        padding-right: 10px;
+    }
+    .menu ul.lists li.link {
+        border: 1px solid blue;
+        background-color: aqua;
+    }
+    .navbar-container div {
+        padding: 0;
+    }
+}
+
+
+/* @media only screen and (min-width:200px) and(max-width:337) {
+    .picture {
+        display: none;
+    }
+    div.catch a {
+        transform: rotate(90deg);
+        padding-top: 10px;
+        padding-left: 2px;
+        align-items: center;
+        width: 60%;
+    }
+    .catch {
+        height: 40%;
+    }
+    .picture {
+        display: none;
+    }
+} */
