@@ -39,6 +39,15 @@
         margin-left: 25px;
     }
     
+    .project1 #ATS {
+        border-radius: 30px 0 30px 0;
+        position: absolute;
+        top: 2%;
+        bottom: 2%;
+        width: 90%;
+        height: 94%;
+    }
+    
     .menu.link a {
         width: auto;
         color: white;
